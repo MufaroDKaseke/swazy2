@@ -1,0 +1,26 @@
+// Custom Bootstrap
+
+$color-1: #5BBA6F;
+$color-2: #3FA34D;
+$color-3: #2A9134;
+$color-4: #137547;
+$color-5: #054A29;
+
+// Theme Colours
+$primary: $color-2;
+$secondary: $color-3;
+$black: #000000;
+$white: #FFFFFF;
+$text-color: $white;
+
+// Button
+$btn-padding-x: 1.5rem;
+$btn-border-radius: 0;
+$btn-font-family: 'Bebas Neue', serif;
+
+
+// Import the functions and variables
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+@import "../../node_modules/bootstrap/scss/bootstrap";

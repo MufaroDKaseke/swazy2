@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/src/css/bootstrap.css">
+  <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+  
+  
+  <!-- Header -->
+  <nav id="header" class="navbar navbar-expand-md bg-body-tertiary fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Swazy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#headerNav"
+      aria-controls="headerNav" aria-label="Toggle navigation">
+      <i class="bi bi-three-dots-vertical"></i>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="headerNav" aria-labelledby="headerNavLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="headerNavLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Booking</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- End Of Header -->
+
+<!-- Main Content -->
+<main>
+  <!-- Hero Section-->
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 col-lg-8 text-center">
+          <h1 class="mb-4 fw-bold display-1">SWAZY</h1>
+          <h3 class="fw-light">Gospel Rapper</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Of Hero Section -->
+  
+  <div class="d-flex justify-content-center py-5">
+    <a href="#" class="hero-drop h1">
+      <i class="bi bi-chevron-compact-down"></i>
+    </a>
+  </div>
+  
+  <!-- About Section -->
+  <section class="about pb-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-8 text-center">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, officiis quisquam, ducimus asperiores minima in, dicta necessitatibus saepe placeat optio nobis eveniet eligendi officia hic laudantium voluptates? Quod, ipsum voluptatum!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ratione dolorum facere error nemo quo distinctio repellendus odio eligendi fugit.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam id perspiciatis, sit fuga ex ipsa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Of About Section -->
+  
+  <div class="d-flex justify-content-center py-4">
+    <hr style="border-color: white;" class="border-2 border-white w-50 w-md-25">
+  </div>
+  
+  <!-- Recent Section -->
+  <section class="recent py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 mb-4">
+          <h2 class="text-center">RECENT ALBUM</h2>
+        </div>
+        <div class="col-lg-6">
+          <div class="recent-container p-3 p-5">
+            <div class="row align-items-center">
+              <div class="col-sm-6">
+                <img src="/public/assets/images/profile.jpg" alt="" class="recent-album-cover img-fluid">
+              </div>
+              <div class="col-sm-6 pt-2">
+                <h3>CHASING THE SUM</h3>
+                <ul class="list-group recent-album-songs rounded-0">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>1. Song 1</span>
+                    <span>3:45</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>2. Song 2</span>
+                    <span>4:20</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>3. Song 3</span>
+                    <span>2:50</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>4. Song 4</span>
+                    <span>3:15</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>5. Song 5</span>
+                    <span>4:05</span>
+                  </li>
+                  <!-- <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>6. Song 6</span>
+                    <span>3:30</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>7. Song 7</span>
+                    <span>4:10</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>8. Song 8</span>
+                    <span>3:55</span>
+                  </li> -->
+                </ul>
+                <div class="text-center mt-2">
+                  <a href="" class="btn btn-sm btn-primary"><i class="bi bi-spotify me-1"></i>Play All</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Of Recent Section -->
+  
+  <!-- Booking Section-->
+  <section class="booking py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="booking-container">
+            <div class="row align-items-center">
+              <div class="col-md-6 p-4">
+                
+                <form action="">
+                  <div class="form-group mb-2">
+                    <input type="email" name="email" id="email" placeholder="Email Address" class="form-control">
+                  </div>
+                  <div class="form-group mb-2">
+                    <input type="email" name="email" id="email" placeholder="Phone Number" class="form-control">
+                  </div>
+                  <div class="form-group mb-2">
+                    <textarea name="text" id="text" rows="7" cols="10" class="form-control" placeholder="Enter your offer here"></textarea>
+                  </div>
+                  <div class="form-group text-center text-md-start">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-6 p-4">
+                <div class="booking-callout">
+                  <img src="/public/assets/images/profile.jpg" alt="" class="img-fluid">
+                  <div class="booking-callout-float p-4">
+                    <h4>Book Us</h4>
+                    <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Of Booking Section-->
+  
+  <!-- Instagram Section -->
+  <section class="instagram mb-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-12">
+          <h2 class="text-center">Recent Post</h2>
+        </div>
+        <div class="col-md-9">
+          <div class="row g-0">
+            <div class="instagram-post col-4 col-md-3">
+              <img src="/public/assets/images/profile.jpg" alt="IG Post 1" class="img-fluid">
+              <i class="instagram-post-float bi bi-camera-video"></i>
+              <a href="" class="instagram-post-overlay">
+                <i class="bi bi-eye"></i>
+                <span>View Post</span>
+              </a>
+            </div>
+            <div class="instagram-post col-4 col-md-3">
+              <img src="/public/assets/images/profile.jpg" alt="IG Post 1" class="img-fluid">
+              <i class="instagram-post-float bi bi-camera-video"></i>
+            </div>
+            <div class="instagram-post col-4 col-md-3">
+              <img src="/public/assets/images/profile.jpg" alt="IG Post 1" class="img-fluid">
+              <i class="instagram-post-float bi bi-files"></i>
+            </div>
+            <div class="instagram-post col-4 col-md-3">
+              <img src="/public/assets/images/profile.jpg" alt="IG Post 1" class="img-fluid">
+              <i class="instagram-post-float bi bi-camera-video"></i>
+            </div>
+            <div class="instagram-post col-4 col-md-3">
+              <img src="/public/assets/images/profile.jpg" alt="IG Post 1" class="img-fluid">
+              <i class="instagram-post-float bi bi-camera-video"></i>
+            </div>
+            <div class="instagram-post col-4 col-md-3">
+              <img src="/public/assets/images/profile.jpg" alt="IG Post 1" class="img-fluid">
+              <i class="instagram-post-float bi bi-camera-video"></i>
+            </div>
+            <div class="instagram-post col-4 col-md-3">
+              <img src="/public/assets/images/profile.jpg" alt="IG Post 1" class="img-fluid">
+              <i class="instagram-post-float bi bi-camera-video"></i>
+            </div>
+            <div class="instagram-post col-4 col-md-3">
+              <img src="/public/assets/images/profile.jpg" alt="IG Post 1" class="img-fluid">
+              <i class="instagram-post-float bi bi-camera-video"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Of Instagram Section -->
+  
+</main>
+
+<!-- Footer -->
+<footer id="footer">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center">
+        <h2 class="fw-bold">SWAZY</h2>
+        <ul class="footer-socials nav justify-content-center">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="bi bi-spotify"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        <p>All Rights Reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End Of Footer -->
+
+<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/htmx.org@2.0.3"
+integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq" crossorigin="anonymous"></script>
+<script src="/src/js/main.js"></script>
+</body>
+</html>

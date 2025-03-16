@@ -164,6 +164,9 @@ html {
 .hero > .container > .row {
   height: 80vh;
 }
+.hero h1 {
+  letter-spacing: 5px;
+}
 
 .recent-container {
   background: #333333;

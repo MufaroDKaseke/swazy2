@@ -48,13 +48,13 @@ html {
 
 // Hero
 .hero {
-  background: linear-gradient(180deg, rgba(0 0 0 / 50%), rgba(0 0 0 / 75%)), url('/public/assets/images/profile.jpg');
+  background: linear-gradient(180deg, rgba(0 0 0 / 50%), rgba(0 0 0 / 75%)), url('../../public/assets/images/profile.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 
   @media (min-width: $breakpoint-md) {
-    background-image: linear-gradient(180deg, rgba(0 0 0 / 50%), rgba(0 0 0 / 75%)), url('/public/assets/images/profile-wide.jpg');
+    background-image: linear-gradient(180deg, rgba(0 0 0 / 50%), rgba(0 0 0 / 75%)), url('../../public/assets/images/profile-wide.jpg');
   }
   
   > .container > .row {

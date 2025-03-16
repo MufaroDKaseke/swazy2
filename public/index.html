@@ -15,35 +15,44 @@
   
   
   <!-- Header -->
-  <nav id="header" class="navbar navbar-expand-md bg-body-tertiary fixed-top">
+  <nav id="header" class="navbar navbar-expand-md fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Swazy</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#headerNav"
-      aria-controls="headerNav" aria-label="Toggle navigation">
-      <i class="bi bi-three-dots-vertical"></i>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="headerNav" aria-labelledby="headerNavLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="headerNavLabel">Offcanvas</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+      <div class="collapse navbar-collapse" id="headerNav">
+        <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#">Gallery</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Booking</a>
           </li>
         </ul>
       </div>
+      <ul class="nav header-socials">
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i class="bi bi-spotify"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i class="bi bi-facebook"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i class="bi bi-instagram"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i class="bi bi-youtube"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i class="bi bi-apple"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i class="bi bi-soundwave"></i></a>
+        </li>
+      </ul>
     </div>
-  </div>
-</nav>
-<!-- End Of Header -->
+  </nav>
+  <!-- End Of Header -->
 
 <!-- Main Content -->
 <main>
@@ -91,11 +100,11 @@
         <div class="col-12 mb-4">
           <h2 class="text-center">RECENT ALBUM</h2>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-8">
           <div class="recent-container p-3 p-5">
             <div class="row align-items-center">
               <div class="col-sm-6">
-                <img src="/public/assets/images/profile.jpg" alt="" class="recent-album-cover img-fluid">
+                <img src="/public/assets/images/chasing_the_sun.jpg" alt="" class="recent-album-cover img-fluid">
               </div>
               <div class="col-sm-6 pt-2">
                 <h3>CHASING THE SUM</h3>
@@ -134,7 +143,7 @@
                   </li>
                 </ul>
                 <div class="text-center mt-2">
-                  <a href="" class="btn btn-sm btn-primary"><i class="bi bi-spotify me-1"></i>Play All</a>
+                  <a href="" class="btn btn-lg btn-primary"><i class="bi bi-spotify me-1"></i>Play All</a>
                 </div>
               </div>
             </div>

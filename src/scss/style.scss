@@ -6,6 +6,15 @@
 
 // Header
 #header {
+  transition: all .3s ease-in-out;
+  background: transparent;
+  padding: 1rem 0;
+  
+  &.scrolled {
+    background: rgba(0 0 0 / 95%);
+    padding: .5rem 0;
+  }
+  
   .navbar-brand {
     font-family: 'Bebas Neue', serif;
   }
@@ -18,6 +27,7 @@
     font-size: .8rem;
     padding: .25rem 1rem;
     margin-right: .5rem;
+    color: $white;
     
     &.active, &:hover {
       color: $primary;
@@ -28,13 +38,20 @@
       border-left: 2px solid $primary;
     }
   }
+  
+  .header-socials {
+    .nav-link {
+      font-size: 1.2rem;
+    }
+  }
 }
 
 // Hero
 .hero {
-  background: linear-gradient(180deg, rgba(0 0 0 / 30%), rgba(0 0 0 / 90%) 60%, rgba(0 0 0 / 100%) 90%), url('/public/assets/images/profile.jpg');
+  background: linear-gradient(180deg, rgba(0 0 0 / 50%), rgba(0 0 0 / 75%)), url('/public/assets/images/profile.jpg');
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   
   > .container > .row {
     height: 80vh;

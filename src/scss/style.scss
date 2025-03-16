@@ -4,6 +4,10 @@
 @import 'base';
 @import 'mixins';
 
+html {
+  scroll-behavior: smooth;
+}
+
 // Header
 #header {
   transition: all .3s ease-in-out;
@@ -24,7 +28,6 @@
   }
   
   .nav-link {
-    font-size: .8rem;
     padding: .25rem 1rem;
     margin-right: .5rem;
     color: $white;
@@ -34,9 +37,6 @@
       font-weight: 600;
     }
     
-    &.active {
-      border-left: 2px solid $primary;
-    }
   }
   
   .header-socials {
@@ -52,6 +52,10 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+
+  @media (min-width: $breakpoint-md) {
+    background-image: linear-gradient(180deg, rgba(0 0 0 / 50%), rgba(0 0 0 / 75%)), url('/public/assets/images/profile-wide.jpg');
+  }
   
   > .container > .row {
     height: 80vh;
@@ -126,6 +130,75 @@
       grid-row: span 2;
       aspect-ratio: auto;
       height: 100%;
+    }
+  }
+}
+
+// Events
+.events {
+  &-timeline {
+    position: relative;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      left: 80px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: rgba(255 255 255 / 10%);
+    }
+  }
+  
+  .event-item {
+    display: flex;
+    gap: 2rem;
+    padding: 1.5rem 0;
+    
+    .event-date {
+      min-width: 80px;
+      text-align: center;
+      background: lighten($color: $black, $amount: 10%);
+      padding: 1rem;
+      position: relative;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        right: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-left: 10px solid lighten($color: $black, $amount: 10%);
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+      }
+      
+      .day {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1;
+      }
+      
+      .month {
+        display: block;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+      }
+    }
+    
+    .event-content {
+      flex: 1;
+      background: lighten($color: $black, $amount: 5%);
+      padding: 1.5rem;
+      
+      h4 {
+        margin-bottom: 0.5rem;
+      }
+      
+      small {
+        color: $primary;
+      }
     }
   }
 }

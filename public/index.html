@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="/src/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="/src/css/style.css">
 </head>
 <body>
@@ -20,22 +21,19 @@
       <div class="collapse navbar-collapse" id="headerNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">About</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Gallery</a>
+            <a class="nav-link" href="#gallery">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Booking</a>
+            <a class="nav-link" href="#booking">Booking</a>
           </li>
         </ul>
       </div>
       <ul class="nav header-socials">
         <li class="nav-item">
           <a href="#" class="nav-link"><i class="bi bi-spotify"></i></a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link"><i class="bi bi-facebook"></i></a>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link"><i class="bi bi-instagram"></i></a>
@@ -53,128 +51,132 @@
     </div>
   </nav>
   <!-- End Of Header -->
-
-<!-- Main Content -->
-<main>
-  <!-- Hero Section-->
-  <section class="hero">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6 col-lg-8 text-center">
-          <h1 class="mb-4 fw-bold display-1">SWAZY</h1>
-          <h3 class="fw-light">Gospel Rapper</h3>
+  
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section-->
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 col-lg-8 text-center animate__animated animate__fadeIn animate__delay-200ms">
+            <h1 class="mb-4 fw-bold display-1">SWAZY</h1>
+            <h3 class="fw-light">Gospel Rapper</h3>
+          </div>
         </div>
       </div>
+    </section>
+    <!-- End Of Hero Section -->
+    
+    <div class="d-flex justify-content-center py-5">
+      <a href="#" class="hero-drop h1">
+        <i class="bi bi-chevron-compact-down"></i>
+      </a>
     </div>
-  </section>
-  <!-- End Of Hero Section -->
-  
-  <div class="d-flex justify-content-center py-5">
-    <a href="#" class="hero-drop h1">
-      <i class="bi bi-chevron-compact-down"></i>
-    </a>
-  </div>
-  
-  <!-- About Section -->
-  <section class="about pb-5">
-    <div class="container">
-      <div class="row align-items-center justify-content-center">
-        <div class="col-md-8 text-center">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, officiis quisquam, ducimus asperiores minima in, dicta necessitatibus saepe placeat optio nobis eveniet eligendi officia hic laudantium voluptates? Quod, ipsum voluptatum!</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ratione dolorum facere error nemo quo distinctio repellendus odio eligendi fugit.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam id perspiciatis, sit fuga ex ipsa.</p>
+    
+    <!-- About Section -->
+    <section id="about" class="about pb-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-8 text-center wow animate__animated animate__fadeIn animate__delay-200ms">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, officiis quisquam, ducimus asperiores minima in, dicta necessitatibus saepe placeat optio nobis eveniet eligendi officia hic laudantium voluptates? Quod, ipsum voluptatum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ratione dolorum facere error nemo quo distinctio repellendus odio eligendi fugit.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam id perspiciatis, sit fuga ex ipsa.</p>
+          </div>
         </div>
       </div>
+    </section>
+    <!-- End Of About Section -->
+    
+    <div class="d-flex justify-content-center py-4">
+      <hr style="border-color: white;" class="border-2 border-white w-50 w-md-25">
     </div>
-  </section>
-  <!-- End Of About Section -->
-  
-  <div class="d-flex justify-content-center py-4">
-    <hr style="border-color: white;" class="border-2 border-white w-50 w-md-25">
-  </div>
-  
-  <!-- Recent Section -->
-  <section class="recent py-5">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 mb-4">
-          <h2 class="text-center">RECENT ALBUM</h2>
-        </div>
-        <div class="col-lg-8">
-          <div class="recent-container p-3 p-5">
-            <div class="row align-items-center">
-              <div class="col-sm-6">
-                <img src="/public/assets/images/chasing_the_sun.jpg" alt="" class="recent-album-cover img-fluid">
-              </div>
-              <div class="col-sm-6 pt-2">
-                <h3>CHASING THE SUM</h3>
-                <ul class="list-group recent-album-songs rounded-0">
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <span>1. O Heavenly Father</span>
-                    <span>2:06</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <span>2. Temple</span>
-                    <span>4:20</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <span>3. God Thoe</span>
-                    <span>2:04</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <span>4. Plan for me</span>
-                    <span>2:31</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <span>5. Coming Back</span>
-                    <span>2:03</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <span>6. Psalms 6(how long)</span>
-                    <span>3:40</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <span>7. Rhapsody</span>
-                    <span>3:56</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <span>8. Lost</span>
-                    <span>3:14</span>
-                  </li>
-                </ul>
-                <div class="text-center mt-2">
-                  <a href="" class="btn btn-lg btn-primary"><i class="bi bi-spotify me-1"></i>Play All</a>
+    
+    <!-- Recent Section -->
+    <section class="recent py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 mb-4">
+            <h2 class="text-center">RECENT ALBUM</h2>
+          </div>
+          <div class="col-lg-8">
+            <div class="recent-container p-3 p-md-5 wow animate__animated animate__fadeInUp animate__delay-200ms">
+              <div class="row align-items-center">
+                <div class="col-sm-6">
+                  <img src="/public/assets/images/chasing_the_sun.jpg" alt="" class="recent-album-cover img-fluid">
+                </div>
+                <div class="col-sm-6 pt-2">
+                  <h3>CHASING THE SUN</h3>
+                  <ul class="list-group recent-album-songs rounded-0">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span>1. O Heavenly Father <small class="d-block text-primary">ft. Lynn Rozzay</small></span>
+                      <span>2:06</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span>2. Temple <small class="d-block text-primary">ft. Lynn Rozzay</small></span>
+                      <span>4:20</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span>3. God Thoe <small class="d-block text-primary">ft. Lynn Rozzay</small></span>
+                      <span>2:04</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span>4. Plan for me <small class="d-block text-primary">ft. Lynn Rozzay</small></span>
+                      <span>2:31</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span>5. Coming Back <small class="d-block text-primary">ft. Lynn Rozzay</small></span>
+                      <span>2:03</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span>6. Psalms 6(how long) <small class="d-block text-primary">ft. Lynn Rozzay</small></span>
+                      <span>3:40</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span>7. Rhapsody <small class="d-block text-primary">ft. Lynn Rozzay</small></span>
+                      <span>3:56</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span>8. Lost <small class="d-block text-primary">ft. Lynn Rozzay, Jason Gwanzura, Elizabeth Tendai</small></span>
+                      <span>3:14</span>
+                    </li>
+                  </ul>
+                  <div class="text-center mt-2">
+                    <a href="" class="btn btn-lg btn-primary"><i class="bi bi-spotify me-1"></i>Play All</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <!-- End Of Recent Section -->
+
+    <div class="d-flex justify-content-center py-4">
+      <hr style="border-color: white;" class="border-2 border-white w-50 w-md-25">
     </div>
-  </section>
-  <!-- End Of Recent Section -->
-  
-  <!-- Gallery Section -->
-  <section class="gallery py-5">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 mb-4">
-          <h2 class="text-center">GALLERY</h2>
-        </div>
-        <div class="col-md-8">
-          <div class="gallery-grid">
-            <div class="gallery-item tall">
-              <img src="/public/assets/images/profile.jpg" alt="Gallery Image">
-            </div>
-            <div class="gallery-item">
-              <img src="/public/assets/images/profile2.jpg" alt="Gallery Image">
-            </div>
-            <div class="gallery-item">
-              <img src="/public/assets/images/profile.jpg" alt="Gallery Image">
-            </div>
-            <div class="gallery-item wide">
-              <img src="/public/assets/images/sway.jpg" alt="Gallery Image">
-            </div>
+    
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 mb-4">
+            <h2 class="text-center">GALLERY</h2>
+          </div>
+          <div class="col-md-8">
+            <div class="gallery-grid wow animate__animated animate__fadeIn animate__delay-200ms">
+              <div class="gallery-item tall">
+                <img src="/public/assets/images/profile.jpg" alt="Gallery Image">
+              </div>
+              <div class="gallery-item">
+                <img src="/public/assets/images/profile2.jpg" alt="Gallery Image">
+              </div>
+              <div class="gallery-item">
+                <img src="/public/assets/images/profile.jpg" alt="Gallery Image">
+              </div>
+              <div class="gallery-item wide">
+                <img src="/public/assets/images/sway.jpg" alt="Gallery Image">
+              </div>
             </div>
           </div>
         </div>
@@ -183,15 +185,82 @@
   </section>
   <!-- End Of Gallery Section -->
 
+  <div class="d-flex justify-content-center py-4">
+    <hr style="border-color: white;" class="border-2 border-white w-50 w-md-25">
+  </div>
+  
+  <!-- Events Section -->
+  <section id="events" class="events py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 mb-4">
+          <h2 class="text-center">UPCOMING EVENTS</h2>
+        </div>
+        <div class="col-md-8">
+          <div class="events-timeline wow animate__animated animate__fadeInUp animate__delay-200ms">
+            <div class="event-item">
+              <div class="event-date">
+                <span class="day">25</span>
+                <span class="month">MAR</span>
+              </div>
+              <div class="event-content">
+                <h4>Gospel Night</h4>
+                <p class="mb-1 d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <small><i class="bi bi-geo-alt me-2"></i>Christ Embassy, Lagos</small>
+              </div>
+            </div>
+            
+            <div class="event-item">
+              <div class="event-date">
+                <span class="day">12</span>
+                <span class="month">APR</span>
+              </div>
+              <div class="event-content">
+                <h4>Youth Concert</h4>
+                <p class="mb-1 d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <small><i class="bi bi-geo-alt me-2"></i>Winners Chapel, Abuja</small>
+              </div>
+            </div>
+            
+            <div class="event-item">
+              <div class="event-date">
+                <span class="day">30</span>
+                <span class="month">APR</span>
+              </div>
+              <div class="event-content">
+                <h4>Album Launch</h4>
+                <p class="mb-1 d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <small><i class="bi bi-geo-alt me-2"></i>Oriental Hotel, Lagos</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Of Events Section -->
+
+  <div class="d-flex justify-content-center py-4">
+    <hr style="border-color: white;" class="border-2 border-white w-50 w-md-25">
+  </div>
+  
   <!-- Booking Section-->
-  <section class="booking py-5">
+  <section id="booking" class="booking py-5">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-8">
-          <div class="booking-container">
+          <div class="booking-container wow animate__animated animate__fadeInUp animate__delay-200ms">
             <div class="row align-items-center">
               <div class="col-md-6 p-4">
-                
+                <div class="booking-callout">
+                  <img src="/public/assets/images/profile.jpg" alt="" class="img-fluid">
+                  <div class="booking-callout-float p-4">
+                    <h4>Book Us</h4>
+                    <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 p-4">  
                 <form action="">
                   <div class="form-group mb-2">
                     <input type="email" name="email" id="email" placeholder="Email Address" class="form-control">
@@ -207,15 +276,6 @@
                   </div>
                 </form>
               </div>
-              <div class="col-md-6 p-4">
-                <div class="booking-callout">
-                  <img src="/public/assets/images/profile.jpg" alt="" class="img-fluid">
-                  <div class="booking-callout-float p-4">
-                    <h4>Book Us</h4>
-                    <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</small>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -223,6 +283,10 @@
     </div>
   </section>
   <!-- End Of Booking Section-->
+
+  <div class="d-flex justify-content-center py-4">
+    <hr style="border-color: white;" class="border-2 border-white w-50 w-md-25">
+  </div>
   
   <!-- Instagram Section -->
   <section class="instagram mb-5">
@@ -232,7 +296,7 @@
           <h2 class="text-center">Recent Post</h2>
         </div>
         <div class="col-md-9">
-          <div class="row g-0">
+          <div class="row g-0 wow animate__animated animate__fadeIn animate__delay-200ms">
             <div class="instagram-post col-4 col-md-3">
               <img src="/public/assets/images/profile.jpg" alt="IG Post 1" class="img-fluid">
               <i class="instagram-post-float bi bi-camera-video"></i>
@@ -275,6 +339,10 @@
     </div>
   </section>
   <!-- End Of Instagram Section -->
+
+  <div class="d-flex justify-content-center py-4">
+    <hr style="border-color: white;" class="border-2 border-white w-50 w-md-25">
+  </div>
   
 </main>
 
@@ -312,6 +380,7 @@
 <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/htmx.org@2.0.3"
 integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script src="/src/js/main.js"></script>
 </body>
 </html>

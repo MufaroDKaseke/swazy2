@@ -118,6 +118,10 @@ select::placeholder,
   color: #3FA34D;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #header {
   transition: all 0.3s ease-in-out;
   background: transparent;
@@ -134,7 +138,6 @@ select::placeholder,
   border: 0;
 }
 #header .nav-link {
-  font-size: 0.8rem;
   padding: 0.25rem 1rem;
   margin-right: 0.5rem;
   color: #FFFFFF;
@@ -142,9 +145,6 @@ select::placeholder,
 #header .nav-link.active, #header .nav-link:hover {
   color: #3FA34D;
   font-weight: 600;
-}
-#header .nav-link.active {
-  border-left: 2px solid #3FA34D;
 }
 #header .header-socials .nav-link {
   font-size: 1.2rem;
@@ -155,6 +155,11 @@ select::placeholder,
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+@media (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("/public/assets/images/profile-wide.jpg");
+  }
 }
 .hero > .container > .row {
   height: 80vh;
@@ -216,6 +221,63 @@ select::placeholder,
   grid-row: span 2;
   aspect-ratio: auto;
   height: 100%;
+}
+
+.events-timeline {
+  position: relative;
+}
+.events-timeline::before {
+  content: "";
+  position: absolute;
+  left: 80px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.events .event-item {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem 0;
+}
+.events .event-item .event-date {
+  min-width: 80px;
+  text-align: center;
+  background: #1a1a1a;
+  padding: 1rem;
+  position: relative;
+}
+.events .event-item .event-date::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left: 10px solid #1a1a1a;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+.events .event-item .event-date .day {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+}
+.events .event-item .event-date .month {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.events .event-item .event-content {
+  flex: 1;
+  background: #0d0d0d;
+  padding: 1.5rem;
+}
+.events .event-item .event-content h4 {
+  margin-bottom: 0.5rem;
+}
+.events .event-item .event-content small {
+  color: #3FA34D;
 }
 
 .booking-callout {

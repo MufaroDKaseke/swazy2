@@ -40,6 +40,11 @@ html {
   }
   
   .header-socials {
+
+    @media screen and (max-width: $breakpoint-md) {
+      width: 100%;
+      justify-content: space-around;
+    }
     .nav-link {
       font-size: 1.2rem;
     }

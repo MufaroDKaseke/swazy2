@@ -146,6 +146,12 @@ html {
   color: #3FA34D;
   font-weight: 600;
 }
+@media screen and (max-width: 768px) {
+  #header .header-socials {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
 #header .header-socials .nav-link {
   font-size: 1.2rem;
 }

@@ -45,7 +45,7 @@ jobs:
         run: |
           mkdir -p public/css
           npx sass src/scss/style.scss:src/css/style.css
-          npx sass src/scss/bootstrap.scss:src/css/bootstrap.css
+          npx sass src/scss/custom.scss:src/css/bootstrap.css
           
         # Copy /public to root
       - name: Prepare for deployment

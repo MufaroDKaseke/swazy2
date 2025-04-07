@@ -43,7 +43,7 @@ jobs:
         # Build SCSS
       - name: Build SCSS
         run: |
-          mkdir -p public/css
+          mkdir -p dist/css
           npx sass src/scss/style.scss:src/css/style.css
           npx sass src/scss/custom.scss:src/css/bootstrap.css
           

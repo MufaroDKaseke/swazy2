@@ -8,6 +8,42 @@ html {
   scroll-behavior: smooth;
 }
 
+// Construction Banner
+.construction-banner {
+  background-color: white;
+  color: #000;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  
+  i {
+    color: #ff9800;
+    margin: 0 8px;
+    font-size: 1.2em;
+    animation: pulse 2s infinite;
+  }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+// Adjust header and body for the banner
+#header {
+  top: 42px;
+}
+
+body {
+  padding-top: 42px;
+}
+
 // Header
 #header {
   transition: all .3s ease-in-out;
